@@ -6,13 +6,16 @@ public class Player : MonoBehaviour
 {
     public bool IsHoldingObject;
     private int CollectedCash;
+    public int HoldingObjectValue;
     void Start()
     {
         CollectedCash = 0;
     }
-    public void InsertItem()
+    public void InsertItem(int ValueOfItem)
     {
         IsHoldingObject = false;
-        Debug.Log("InsertItemTest");
+        CollectedCash += ValueOfItem;
+        Debug.Log("CollectedCash" + CollectedCash);
+        Debug.Log("ValueOfItem " + ValueOfItem);
     }
 }

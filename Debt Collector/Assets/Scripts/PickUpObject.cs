@@ -4,12 +4,17 @@ using UnityEngine;
 
 public class PickUpObject : MonoBehaviour
 {
+    public int Value;
     private void OnCollisionEnter(Collision collision)
     {
         Player PlayerObject = collision.collider.GetComponent<Player>();
-        PlayerObject.IsHoldingObject = true;
-        Collider PickedObjectCollider = GetComponent<Collider>();
-        gameObject.SetActive(false);
-        PickedObjectCollider.enabled = false;
+        if(!PlayerObject.IsHoldingObject)
+        {
+            PlayerObject.HoldingObjectValue = Value;
+            PlayerObject.IsHoldingObject = true;
+            Collider PickedObjectCollider = GetComponent<Collider>();
+            gameObject.SetActive(false);
+            PickedObjectCollider.enabled = false;
+        }
     }
 }

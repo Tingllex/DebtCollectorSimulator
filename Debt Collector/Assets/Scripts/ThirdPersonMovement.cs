@@ -8,11 +8,18 @@ public class ThirdPersonMovement : MonoBehaviour
     public Transform cam;
 
     public float speed = 6f;
+    public float gravity = -9.81f;
+    public float jumpHeight = 3;
+    Vector3 velocity;
+    bool isGrounded;
 
     public float turnSmoothTime = 0.1f;
     float turnSmoothVelocity;
 
-    private bool jumpKeyWasPressed;
+    public Transform groundCheck;
+    public float groundDistance = 0.1f;
+    public LayerMask groundMask;
+
     private float horizontalInput;
     private float verticalInput;
     private Rigidbody rigidbodyComponent;
@@ -26,31 +33,30 @@ public class ThirdPersonMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //jump
+        isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
+
+        if (isGrounded && velocity.y <= 0)
+        {
+            velocity.y = -2f;
+        }
+
+        if (Input.GetButtonDown("Jump") && isGrounded)
+        {
+            velocity.y = Mathf.Sqrt(jumpHeight * -2 * gravity);
+        }
+
+        //gravity
+        velocity.y += gravity * Time.deltaTime;
+        controller.Move(velocity * Time.deltaTime);
+
         horizontalInput = Input.GetAxis("Horizontal");
         verticalInput = Input.GetAxis("Vertical");
-
-
-        //Vector3 direction = new Vector3(horizontalInput, 0f, verticalInput).normalized;
-
-
-
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            jumpKeyWasPressed = true;
-        }
     }
 
     // FixedUpdate is called once per phisic update
     private void FixedUpdate()
     {
-        if (jumpKeyWasPressed)
-        {
-            rigidbodyComponent.AddForce(Vector3.up * 5, ForceMode.VelocityChange);
-            jumpKeyWasPressed = false;
-        }
-
-        //rigidbodyComponent.velocity = new Vector3(horizontalInput, rigidbodyComponent.velocity.y, verticalInput);
-
         Vector3 direction = new Vector3(horizontalInput, 0f, verticalInput).normalized;
 
         if (direction.magnitude >= 0.1f)

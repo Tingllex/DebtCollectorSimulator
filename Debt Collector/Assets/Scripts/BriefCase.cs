@@ -17,6 +17,8 @@ public class BriefCase : MonoBehaviour
         {
             //int value = ItemComponent.Value;
             PlayerObject.InsertItem(PlayerObject.HoldingObjectValue);
+
+            Score.instance.AddCash();
         }
     }
 }

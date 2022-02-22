@@ -5,12 +5,14 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     public bool IsHoldingObject;
-    private int CollectedCash;
+    public int CollectedCash;
     public int HoldingObjectValue;
+
     void Start()
     {
         CollectedCash = 0;
     }
+
     public void InsertItem(int ValueOfItem)
     {
         IsHoldingObject = false;

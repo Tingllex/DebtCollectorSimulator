@@ -5,7 +5,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     public bool IsHoldingObject;
-    public int CollectedCash;
+    public static int CollectedCash;
     public int HoldingObjectValue;
 
     void Start()

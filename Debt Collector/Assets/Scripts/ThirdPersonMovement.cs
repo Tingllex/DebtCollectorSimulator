@@ -6,6 +6,7 @@ public class ThirdPersonMovement : MonoBehaviour
 {
     public CharacterController controller;
     public Transform cam;
+    private Animator animator;
 
     public float speed = 6f;
     public float gravity = -9.81f;
@@ -28,6 +29,7 @@ public class ThirdPersonMovement : MonoBehaviour
     private void Start()
     {
         rigidbodyComponent = GetComponent<Rigidbody>();
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -52,6 +54,8 @@ public class ThirdPersonMovement : MonoBehaviour
 
         horizontalInput = Input.GetAxis("Horizontal");
         verticalInput = Input.GetAxis("Vertical");
+
+        animator.SetBool("isRunning", Input.GetAxisRaw("Vertical") != 0);
     }
 
     // FixedUpdate is called once per phisic update

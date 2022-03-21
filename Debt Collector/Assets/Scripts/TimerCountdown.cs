@@ -8,20 +8,25 @@ public class TimerCountdown : MonoBehaviour
 {
     public TextMeshProUGUI textDisplay;
     public float timeValue = 120;
+    [SerializeField] GameObject panel;
 
     // Update is called once per frame
     void Update()
     {
         if(timeValue > 0)
         {
+            panel.SetActive(false);
             timeValue -= Time.deltaTime;
         }
         else
         {
             timeValue = 0;
+            Time.timeScale = 0f;
+            panel.SetActive(true);
         }
 
         DisplayTime(timeValue);
+
     }
 
     void DisplayTime(float timeToDisplay)

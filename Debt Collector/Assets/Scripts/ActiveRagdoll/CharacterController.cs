@@ -5,17 +5,14 @@ using UnityEngine;
 public class CharacterController : MonoBehaviour
 {
     [SerializeField] private float speed = 5f;
+    [SerializeField] private float jumpForce = 5f;
     [SerializeField] private ConfigurableJoint hipJoint;
     [SerializeField] private Rigidbody hip;
     [SerializeField] private Animator targetAnimator;
-
+    public bool isGrounded;
     private bool run = false;
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
+
     void Update()
     {
         float horizontal = Input.GetAxisRaw("Horizontal");
@@ -26,12 +23,19 @@ public class CharacterController : MonoBehaviour
             float targetAngle = Mathf.Atan2(direction.z, direction.x) * Mathf.Rad2Deg;
             this.hipJoint.targetRotation = Quaternion.Euler(0f, targetAngle, 0f);
             this.hip.AddForce(direction * this.speed);
-
             this.run = true;
-
         } else
         {
             this.run = false;
+        }
+
+        if (Input.GetKey(KeyCode.Space))
+        {
+            if (isGrounded)
+            {
+                hip.AddForce(new Vector3(0, jumpForce, 0));
+                isGrounded = false;
+            }
         }
         this.targetAnimator.SetBool("Run", this.run);
     }

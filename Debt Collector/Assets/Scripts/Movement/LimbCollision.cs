@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class LimbCollision : MonoBehaviour
 {
-    public CharacterController characterController;
+    public PlayerMovement playerMovement;
     void Start()
     {
-        characterController = GameObject.FindObjectOfType<CharacterController>().GetComponent<CharacterController>();
+        playerMovement = GameObject.FindObjectOfType<PlayerMovement>().GetComponent<PlayerMovement>();
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        characterController.isGrounded = true;
+        playerMovement.isGrounded = true;
     }
 }

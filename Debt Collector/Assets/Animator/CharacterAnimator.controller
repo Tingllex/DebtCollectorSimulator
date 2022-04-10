@@ -361,19 +361,11 @@ AnimatorStateTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-<<<<<<<< HEAD:Debt Collector/Assets/Animator/CharacterAnimator.controller
   m_TransitionDuration: 0
   m_TransitionOffset: 0
   m_ExitTime: 0
   m_HasExitTime: 0
   m_HasFixedDuration: 0
-========
-  m_TransitionDuration: 0.25
-  m_TransitionOffset: 0
-  m_ExitTime: 0.7857143
-  m_HasExitTime: 1
-  m_HasFixedDuration: 1
->>>>>>>> 01baf6ffd7cb9be1eb0262ab2a2ddcb025926661:Debt Collector/Assets/3D Models/Animation/CharacterAnimator.controller
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1

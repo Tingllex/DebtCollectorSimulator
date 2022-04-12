@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class BriefCase : MonoBehaviour
 {
+    public static int CollectedCash;
+    private void Start()
+    {
+        CollectedCash = 0;
+    }
     void Update()
     {
         
@@ -11,10 +16,17 @@ public class BriefCase : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        Player PlayerObject = collision.collider.GetComponent<Player>();
-        if(PlayerObject.IsHoldingObject)
+        //Player PlayerObject = collision.collider.GetComponent<Player>();
+        if(collision.gameObject.CompareTag("Item"))
         {
-            PlayerObject.InsertItem(PlayerObject.HoldingObjectValue);
+            Item lItem = collision.gameObject.GetComponent<Item>();
+            if (lItem != null)
+            {
+                CollectedCash += lItem.ItemValue;
+            }
+            Destroy(collision.gameObject);
+            Debug.Log("CollectedCash " + CollectedCash);
         }
+        Debug.Log("kolizja!");
     }
 }

@@ -9,6 +9,6 @@ public class Score : MonoBehaviour
 
     void Update()
     {
-        scoreText.text = "Debt collected: " + Player.CollectedCash.ToString() + "$";
+        scoreText.text = "Debt collected: " + BriefCase.CollectedCash.ToString() + "$";
     }
 }

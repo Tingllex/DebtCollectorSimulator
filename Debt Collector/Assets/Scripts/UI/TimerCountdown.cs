@@ -21,6 +21,7 @@ public class TimerCountdown : MonoBehaviour
         else
         {
             timeValue = 0;
+            Cursor.lockState = CursorLockMode.Confined;
             Time.timeScale = 0f;
             panel.SetActive(true);
         }

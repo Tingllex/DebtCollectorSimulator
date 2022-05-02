@@ -9,6 +9,7 @@ public class TimerCountdown : MonoBehaviour
     public TextMeshProUGUI textDisplay;
     public float timeValue = 120;
     [SerializeField] GameObject panel;
+    public static bool isGameOver = false;
 
     // Update is called once per frame
     void Update()
@@ -24,6 +25,7 @@ public class TimerCountdown : MonoBehaviour
             Cursor.lockState = CursorLockMode.Confined;
             Time.timeScale = 0f;
             panel.SetActive(true);
+            isGameOver = true;
         }
 
         DisplayTime(timeValue);

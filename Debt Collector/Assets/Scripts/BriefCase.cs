@@ -32,6 +32,5 @@ public class BriefCase : MonoBehaviour
             Destroy(collision.gameObject);
             Debug.Log("CollectedCash " + CollectedCash);
         }
-        Debug.Log("kolizja!");
     }
 }

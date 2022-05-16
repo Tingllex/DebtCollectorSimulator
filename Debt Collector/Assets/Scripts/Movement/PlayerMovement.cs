@@ -44,7 +44,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 animator.SetBool("isWalking", true);
                 animator.SetBool("isRunning", false);
-                rb.AddForce(rb.transform.forward * speed);
+                rb.AddForce(rb.transform.forward * speed * 0.7f);
                 if (isGrounded)
                 {
                     CreateDust();
@@ -65,7 +65,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKey(KeyCode.S))
         {
             animator.SetBool("isWalking", true);
-            rb.AddForce(-rb.transform.forward * sideSpeed);
+            rb.AddForce(-rb.transform.forward * sideSpeed * 0.5f);
         }
         else if(!Input.GetKey(KeyCode.W))
         {

@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
     public float jumpForce = 1000f;
     public Rigidbody rb;
     public bool isGrounded;
-
+    public ParticleSystem dust;
     public Animator animator;
 
     void Start()
@@ -19,19 +19,23 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (Input.GetKey(KeyCode.Space))
+        /*if (Input.GetKey(KeyCode.Space))
         {
             if (isGrounded)
             {
                 rb.AddForce(new Vector3(0, jumpForce, 0));
                 isGrounded = false;
             }
-        }
+        }*/
 
         if (Input.GetKey(KeyCode.W))
         {
             animator.SetBool("isRunning", true);
             rb.AddForce(rb.transform.forward * speed);
+            if(isGrounded)
+            {
+                CreateDust();
+            }
         }
 
         if (Input.GetKey(KeyCode.A))
@@ -62,6 +66,11 @@ public class PlayerMovement : MonoBehaviour
         {
             animator.SetBool("isMovingRight", false);
         }
+    }
+
+    void CreateDust()
+    {
+        dust.Play();
     }
 }
 

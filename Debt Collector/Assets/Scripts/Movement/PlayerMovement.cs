@@ -30,11 +30,25 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetKey(KeyCode.W))
         {
-            animator.SetBool("isRunning", true);
-            rb.AddForce(rb.transform.forward * speed);
-            if(isGrounded)
+            if (Input.GetKey(KeyCode.LeftShift))
             {
-                CreateDust();
+                animator.SetBool("isWalking", true);
+                animator.SetBool("isRunning", true);
+                rb.AddForce(rb.transform.forward * speed * 1.5f);
+                if (isGrounded)
+                {
+                    CreateDust();
+                }
+            }
+            else
+            {
+                animator.SetBool("isWalking", true);
+                animator.SetBool("isRunning", false);
+                rb.AddForce(rb.transform.forward * speed);
+                if (isGrounded)
+                {
+                    CreateDust();
+                }
             }
         }
 
@@ -50,12 +64,12 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetKey(KeyCode.S))
         {
-            animator.SetBool("isRunning", true);
+            animator.SetBool("isWalking", true);
             rb.AddForce(-rb.transform.forward * sideSpeed);
         }
         else if(!Input.GetKey(KeyCode.W))
         {
-            animator.SetBool("isRunning", false);
+            animator.SetBool("isWalking", false);
         }
         if (Input.GetKey(KeyCode.D))
         {

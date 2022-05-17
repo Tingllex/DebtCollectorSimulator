@@ -63,7 +63,7 @@ public class PauseMenu : MonoBehaviour
 
     public void RestartGame()
     {
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         TimerCountdown.isGameOver = false;
         WinScore.isWinScreen = false;
         Resume();

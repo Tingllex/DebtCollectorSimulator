@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1004120332926818221
+--- !u!1 &815048266504015759
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,12 +8,12 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 478659965862137111}
-  - component: {fileID: 3534007559329858226}
-  - component: {fileID: 1652722585507870328}
-  - component: {fileID: 85062405965904692}
-  - component: {fileID: 85062405965904696}
-  - component: {fileID: 85062405965904693}
+  - component: {fileID: 1252038356063541}
+  - component: {fileID: 4011485906584885904}
+  - component: {fileID: 1175261812588457562}
+  - component: {fileID: 544596654868325142}
+  - component: {fileID: 544596654868325146}
+  - component: {fileID: 544596654868325143}
   m_Layer: 0
   m_Name: Briefcase
   m_TagString: Item
@@ -21,36 +21,36 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &478659965862137111
+--- !u!4 &1252038356063541
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1004120332926818221}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071067}
-  m_LocalPosition: {x: 5.49, y: 1, z: 7.58}
-  m_LocalScale: {x: 1, y: 7.3637977, z: 1}
+  m_GameObject: {fileID: 815048266504015759}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 7.3637967, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &3534007559329858226
+--- !u!33 &4011485906584885904
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1004120332926818221}
+  m_GameObject: {fileID: 815048266504015759}
   m_Mesh: {fileID: 6610462251100039002, guid: b9fe275affddf5d4bad3b4e79479a04c, type: 3}
---- !u!23 &1652722585507870328
+--- !u!23 &1175261812588457562
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1004120332926818221}
+  m_GameObject: {fileID: 815048266504015759}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -88,27 +88,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &85062405965904692
+--- !u!65 &544596654868325142
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1004120332926818221}
+  m_GameObject: {fileID: 815048266504015759}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.37876338, y: 0.29999995, z: 1.3666984}
   m_Center: {x: -0.023394346, y: 0.0000019297, z: 0.05272185}
---- !u!95 &85062405965904696
+--- !u!95 &544596654868325146
 Animator:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1004120332926818221}
+  m_GameObject: {fileID: 815048266504015759}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: b73b1cd937aa0d647b9bb25ad5c8521d, type: 2}
@@ -121,13 +121,13 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &85062405965904693
+--- !u!114 &544596654868325143
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1004120332926818221}
+  m_GameObject: {fileID: 815048266504015759}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5ce133ae75cd2c34c8d43b72cb20d8d3, type: 3}

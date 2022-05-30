@@ -23,7 +23,7 @@ public class CameraControl : MonoBehaviour
     {
         mouseX += Input.GetAxis("Mouse X") * sensitivity;
         mouseY -= Input.GetAxis("Mouse Y") * sensitivity;
-        mouseY = Mathf.Clamp(mouseY, -15, 60);
+        mouseY = Mathf.Clamp(mouseY, 0, 60);
         Quaternion targetRotation = Quaternion.Euler(mouseY, mouseX, 0);
         target.rotation = targetRotation;
 

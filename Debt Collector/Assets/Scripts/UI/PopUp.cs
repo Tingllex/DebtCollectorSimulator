@@ -5,6 +5,7 @@ using UnityEngine;
 public class PopUp : MonoBehaviour
 {
     [SerializeField] GameObject canvas;
+    [SerializeField] CanvasGroup canvasGroup;
 
     private void Update()
     {
@@ -12,7 +13,14 @@ public class PopUp : MonoBehaviour
         {
             canvas.SetActive(true);
         }
-        else
+        else if (TimerCountdown.timeValue < 115)
+        {
+            if (canvasGroup.alpha >= 0)
+            {
+                canvasGroup.alpha -= Time.deltaTime;     
+            }
+        }
+        else if (TimerCountdown.timeValue < 110)
         {
             canvas.SetActive(false);
         }

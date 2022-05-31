@@ -95,6 +95,7 @@ GameObject:
   - component: {fileID: -7812813201228377715}
   - component: {fileID: 4013387173142056044}
   - component: {fileID: 4570692138427217240}
+  - component: {fileID: -6394348334672454639}
   m_Layer: 0
   m_Name: WholeBird
   m_TagString: Item
@@ -137,6 +138,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ItemValue: 10
+  Positive: 0
 --- !u!54 &4013387173142056044
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -166,6 +168,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.7, y: 0.6, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-6394348334672454639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963739717108670263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97f1508c6ef542e4294a841760983363, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 11400000, guid: 98593049d3bc6f148a384a2d5d7ecbda, type: 2}
 --- !u!1 &2526659193860572528
 GameObject:
   m_ObjectHideFlags: 0

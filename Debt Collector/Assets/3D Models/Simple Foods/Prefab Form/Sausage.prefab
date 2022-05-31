@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: -4302442614922613432}
   - component: {fileID: -738815720877506326}
   - component: {fileID: 2248837959532718996}
+  - component: {fileID: 207489322632188945}
   m_Layer: 0
   m_Name: Sausage
   m_TagString: Item
@@ -128,3 +129,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ItemValue: 4
+  Positive: 0
+--- !u!114 &207489322632188945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1032942817933048823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97f1508c6ef542e4294a841760983363, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 11400000, guid: 1625258940bf3d745b0ea01632167a99, type: 2}

@@ -8,12 +8,7 @@ public class PopUp : MonoBehaviour
 
     private void Update()
     {
-        ActivePopUp();
-    }
-
-    void ActivePopUp()
-    {
-        if(TimerCountdown.timeValue > 115)
+        if (TimerCountdown.timeValue > 115)
         {
             canvas.SetActive(true);
         }

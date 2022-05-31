@@ -5,4 +5,5 @@ using UnityEngine;
 public class Item : MonoBehaviour
 {
     public int ItemValue;
+    public bool Positive;
 }

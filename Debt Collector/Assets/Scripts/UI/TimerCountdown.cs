@@ -7,7 +7,7 @@ using TMPro;
 public class TimerCountdown : MonoBehaviour
 {
     public TextMeshProUGUI textDisplay;
-    public static float timeValue = 120;
+    public static float timeValue;
     [SerializeField] GameObject panel;
     public static bool isGameOver = false;
 

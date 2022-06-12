@@ -12,6 +12,8 @@ public class PauseMenu : MonoBehaviour
 
     private void Start()
     {
+        TimerCountdown.isGameOver = false;
+        TimerCountdown.timeValue = 120;
         Time.timeScale = 1f;
     }
     // Update is called once per frame
@@ -63,7 +65,7 @@ public class PauseMenu : MonoBehaviour
 
     public void RestartGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         TimerCountdown.isGameOver = false;
         WinScore.isWinScreen = false;
         Resume();

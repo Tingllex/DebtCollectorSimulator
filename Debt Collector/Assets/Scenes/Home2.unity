@@ -129,7 +129,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh91878
+  m_Name: pb_Mesh23776
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -739,6 +739,45 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 68284845}
   m_CullTransparentMesh: 1
+--- !u!1 &103419635
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 103419636}
+  m_Layer: 0
+  m_Name: Spawners
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &103419636
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 103419635}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.6490822, y: -0.44188595, z: 14.429135}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1891085882}
+  - {fileID: 742969150}
+  - {fileID: 1853237483}
+  - {fileID: 656420463}
+  - {fileID: 549572603}
+  - {fileID: 1992952391}
+  - {fileID: 485976216}
+  - {fileID: 1995017164}
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &116165889
 GameObject:
   m_ObjectHideFlags: 0
@@ -1038,7 +1077,7 @@ Transform:
   m_Children:
   - {fileID: 533680895}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &191689011
 GameObject:
@@ -2075,7 +2114,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh92466
+  m_Name: pb_Mesh24364
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -3088,6 +3127,57 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 480921251}
   m_CullTransparentMesh: 1
+--- !u!1 &485976215
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 485976216}
+  - component: {fileID: 485976217}
+  m_Layer: 0
+  m_Name: Spawner Bedroom (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &485976216
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 485976215}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -5.5509176, y: 3.101886, z: 7.830865}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 103419636}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &485976217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 485976215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa3f5bebc32dfc54789a4c632464a668, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemPrefabs:
+  - {fileID: 2356589682617066289, guid: cee2c0c490a48854aa8fa6e2ac832e8f, type: 3}
+  - {fileID: 2917252015804148337, guid: 32cbcc1be64e1ad41a9ddc50d2619d4f, type: 3}
+  - {fileID: 5201721924287805483, guid: 08218cbec5082794ea670641812e8b38, type: 3}
+  center: {x: 17.58, y: 2.63, z: 0.76}
+  size: {x: 13.23, y: 1.1, z: 13.8}
+  numOfItemsToSpawn: 7
 --- !u!1 &533680894
 GameObject:
   m_ObjectHideFlags: 0
@@ -3135,13 +3225,63 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 1053448794}
   canvasGroup: {fileID: 1053448800}
+--- !u!1 &549572602
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 549572603}
+  - component: {fileID: 549572604}
+  m_Layer: 0
+  m_Name: Spawner TV Room
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &549572603
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 549572602}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -5.5509176, y: 3.101886, z: 7.830865}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 103419636}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &549572604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 549572602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa3f5bebc32dfc54789a4c632464a668, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemPrefabs:
+  - {fileID: 6553393545892302774, guid: f2bd9b0bcbd3e344b8625e9e36223f5f, type: 3}
+  - {fileID: 4323578103158139913, guid: 1f0cae820a846cf449d562cfa708bd4f, type: 3}
+  center: {x: -3.92, y: 2.98, z: 2.32}
+  size: {x: 1.96, y: 1.22, z: 9.21}
+  numOfItemsToSpawn: 3
 --- !u!43 &563515045
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh91902
+  m_Name: pb_Mesh23800
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -3729,6 +3869,56 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &656420462
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 656420463}
+  - component: {fileID: 656420464}
+  m_Layer: 0
+  m_Name: Spawner Kitchen (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &656420463
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 656420462}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -5.5509176, y: 3.101886, z: 7.830865}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 103419636}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &656420464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 656420462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa3f5bebc32dfc54789a4c632464a668, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemPrefabs:
+  - {fileID: 5695226706669232545, guid: 4faaa53a1eb0aac419da2fc6da117b6a, type: 3}
+  - {fileID: 2606322811133411324, guid: 2949dbdb14199764fa3a463d4fb31f04, type: 3}
+  center: {x: -10.56, y: 0.7, z: 32.9}
+  size: {x: 9.9, y: 0.9, z: 2.64}
+  numOfItemsToSpawn: 5
 --- !u!1 &660935422
 GameObject:
   m_ObjectHideFlags: 0
@@ -4156,7 +4346,7 @@ Transform:
   - {fileID: 1540455629}
   - {fileID: 3640022858625029048}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &734178242 stripped
 Transform:
@@ -4278,7 +4468,7 @@ GameObject:
   - component: {fileID: 742969150}
   - component: {fileID: 742969149}
   m_Layer: 0
-  m_Name: Spawner Food (1)
+  m_Name: Spawner Kitchen (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4297,12 +4487,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemPrefabs:
-  - {fileID: 3312883956077679648, guid: 0de69a46455f344d58a7dcaf12e541f2, type: 3}
   - {fileID: 4831848365070257267, guid: af155e0a2f2564df784cddcdf02341c1, type: 3}
-  - {fileID: 5316587841953117281, guid: 6ad77e349a0cc4654a38708787ae1eff, type: 3}
-  - {fileID: 963739717108670263, guid: a80c00c662fe74118b43ad9cbb58853c, type: 3}
-  - {fileID: 1032942817933048823, guid: 2e2896db73d5949d680294aae410cff9, type: 3}
+  - {fileID: 3312883956077679648, guid: 0de69a46455f344d58a7dcaf12e541f2, type: 3}
+  - {fileID: 2943048346840671760, guid: 534c1f9f1a45c4f429d1b70046850c81, type: 3}
+  - {fileID: 5536447206541363498, guid: d8ee164b0a7fd47458d8294000a8bcbe, type: 3}
+  - {fileID: 3366140265147980475, guid: 1a8fa040e5c684308b95679dd2c1dcd6, type: 3}
+  - {fileID: 3517465817000159781, guid: ba43438e580714421b77702924702e2b, type: 3}
+  - {fileID: 4446042087989776518, guid: fdf19312d22c047f7b92ac36a4ac658d, type: 3}
   - {fileID: 5448101533092959829, guid: 5a822460c94534437b7260f2b7c766dd, type: 3}
+  - {fileID: 5536447206541363498, guid: d8ee164b0a7fd47458d8294000a8bcbe, type: 3}
   center: {x: -10.56, y: 2.26, z: 29.19}
   size: {x: 9.9, y: 0.9, z: 2.64}
   numOfItemsToSpawn: 10
@@ -4313,13 +4506,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 742969148}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.2, y: 2.66, z: 22.26}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -5.5509176, y: 3.101886, z: 7.830865}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_Father: {fileID: 103419636}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &752329485
 PrefabInstance:
@@ -9081,7 +9274,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh92150
+  m_Name: pb_Mesh24048
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -9690,7 +9883,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh92410
+  m_Name: pb_Mesh24308
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -10367,6 +10560,56 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a4a62419dc5fe214198cfe3cc84a2acd, type: 3}
+--- !u!1 &1853237482
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1853237483}
+  - component: {fileID: 1853237484}
+  m_Layer: 0
+  m_Name: Spawner Kitchen (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1853237483
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1853237482}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -5.5509176, y: 3.101886, z: 7.830865}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 103419636}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1853237484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1853237482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa3f5bebc32dfc54789a4c632464a668, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemPrefabs:
+  - {fileID: 5695226706669232545, guid: 4faaa53a1eb0aac419da2fc6da117b6a, type: 3}
+  - {fileID: 2606322811133411324, guid: 2949dbdb14199764fa3a463d4fb31f04, type: 3}
+  center: {x: -10.56, y: 0.7, z: 26.3}
+  size: {x: 9.9, y: 0.9, z: 2.64}
+  numOfItemsToSpawn: 5
 --- !u!1 &1881397612
 GameObject:
   m_ObjectHideFlags: 0
@@ -10530,7 +10773,7 @@ GameObject:
   - component: {fileID: 1891085882}
   - component: {fileID: 1891085881}
   m_Layer: 0
-  m_Name: Spawner Food
+  m_Name: Spawner Kitchen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10553,9 +10796,12 @@ MonoBehaviour:
   - {fileID: 3944793617797155257, guid: 273b0a646bf4f410c898f350686cf95d, type: 3}
   - {fileID: 2931599777171156985, guid: 6babded354a0947f5816d671762d9241, type: 3}
   - {fileID: 7334098755715255590, guid: 62b03dc09f6b94275ada9c0d39e5b2d3, type: 3}
+  - {fileID: 2943048346840671760, guid: 534c1f9f1a45c4f429d1b70046850c81, type: 3}
+  - {fileID: 963739717108670263, guid: a80c00c662fe74118b43ad9cbb58853c, type: 3}
+  - {fileID: 5316587841953117281, guid: 6ad77e349a0cc4654a38708787ae1eff, type: 3}
   center: {x: -8.2, y: 2.66, z: 22.26}
   size: {x: 1.27, y: 0.9, z: 2.64}
-  numOfItemsToSpawn: 7
+  numOfItemsToSpawn: 5
 --- !u!4 &1891085882
 Transform:
   m_ObjectHideFlags: 0
@@ -10563,13 +10809,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1891085880}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.2, y: 2.66, z: 22.26}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -5.5509176, y: 3.101886, z: 7.830865}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_Father: {fileID: 103419636}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1893161665 stripped
 GameObject:
@@ -10753,7 +10999,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-287454
+  m_Name: pb_Mesh-1854
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -11405,6 +11651,111 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!1 &1992952390
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1992952391}
+  - component: {fileID: 1992952392}
+  m_Layer: 0
+  m_Name: Spawner Bedroom
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1992952391
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1992952390}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -5.5509176, y: 3.101886, z: 7.830865}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 103419636}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1992952392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1992952390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa3f5bebc32dfc54789a4c632464a668, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemPrefabs:
+  - {fileID: 8191039081769914871, guid: 9313cd2a2ce00d04aabf786120c66c9c, type: 3}
+  - {fileID: 4323578103158139913, guid: 1f0cae820a846cf449d562cfa708bd4f, type: 3}
+  - {fileID: 2783480280030384308, guid: fdd2445a1c3be634d86d0e9fb830cc99, type: 3}
+  - {fileID: 9168667661869067334, guid: f40519a35d322a34385cf91dd0012c48, type: 3}
+  - {fileID: 3502488787443839495, guid: a551eee78e7697446bc4b9114380feb1, type: 3}
+  center: {x: 16.11, y: 2.98, z: -8.14}
+  size: {x: 5.5, y: 1.22, z: 2.19}
+  numOfItemsToSpawn: 3
+--- !u!1 &1995017163
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1995017164}
+  - component: {fileID: 1995017165}
+  m_Layer: 0
+  m_Name: Spawner Bathroom
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1995017164
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1995017163}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -5.5509176, y: 3.101886, z: 7.830865}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 103419636}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1995017165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1995017163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa3f5bebc32dfc54789a4c632464a668, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemPrefabs:
+  - {fileID: 458038881169017769, guid: 1c1cb2bfc61453845b4bad75f444edf6, type: 3}
+  - {fileID: 624221531305772140, guid: 7e5e68fc132091f4e9229584f548fb72, type: 3}
+  - {fileID: 3381153497984466313, guid: e2831f5f4452fb34e8478c82ed21152e, type: 3}
+  - {fileID: 3857579272290203929, guid: ff41d271e09d5634e80a500d634e3372, type: 3}
+  center: {x: 17.58, y: 2.63, z: 28.2}
+  size: {x: 13.23, y: 1.1, z: 13.8}
+  numOfItemsToSpawn: 7
 --- !u!1 &2010885339 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 3d88963db8064d447bcb30dce6ed3422, type: 3}
@@ -11631,7 +11982,7 @@ Transform:
   m_Children:
   - {fileID: 618627444}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2042175268
 PrefabInstance:
@@ -11910,7 +12261,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh92496
+  m_Name: pb_Mesh24394
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -12318,7 +12669,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh92570
+  m_Name: pb_Mesh24468
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2

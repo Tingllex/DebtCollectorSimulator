@@ -8,7 +8,7 @@ public class SpawnObject : MonoBehaviour
     public Vector3 center;
     public Vector3 size;
     public int numOfItemsToSpawn;
-    //public static List<GameObject> spawnedItems = new List<GameObject>();
+    public static List<GameObject> spawnedItems = new List<GameObject>();
     // Start is called before the first frame update
     void Start()
     {

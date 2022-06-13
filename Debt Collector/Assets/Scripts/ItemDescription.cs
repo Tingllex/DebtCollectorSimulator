@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ItemDescription : MonoBehaviour
 {
-    /*public static ItemInfo item;
+    public ItemInfo item;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,6 +14,6 @@ public class ItemDescription : MonoBehaviour
         }
         else
             item.value = Random.Range(0, 11);
-        Debug.Log(item.name);
-    }*/
+        Debug.Log(item.name + item.value);
+    }
 }

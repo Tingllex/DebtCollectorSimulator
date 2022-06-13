@@ -14,6 +14,8 @@ public class SpawnObject : MonoBehaviour
     {
         for(int i = 0; i < numOfItemsToSpawn; i++)
             SpawnItem();
+        for (int i = 0; i < spawnedItems.Count; i++)
+            Debug.Log(spawnedItems[i]);
     }
 
     public void SpawnItem()

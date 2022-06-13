@@ -21,7 +21,7 @@ public class SpawnObject : MonoBehaviour
     public void SpawnItem()
     {
         int randomIndex = Random.Range(0, itemPrefabs.Length);
-        //spawnedItems.Add(itemPrefabs[randomIndex]);
+        spawnedItems.Add(itemPrefabs[randomIndex]);
         Vector3 position = center + new Vector3(Random.Range(-size.x / 2, size.x / 2), Random.Range(-size.y / 2, size.y / 2), Random.Range(-size.z / 2, size.z / 2));
 
         Instantiate(itemPrefabs[randomIndex], position, Quaternion.identity);

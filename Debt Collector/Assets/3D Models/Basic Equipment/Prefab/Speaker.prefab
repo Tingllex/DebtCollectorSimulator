@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 3513096542702063965}
   - component: {fileID: 3513096542702063966}
   - component: {fileID: 3513096542702063953}
-  - component: {fileID: -8291564013588949438}
   m_Layer: 0
   m_Name: Speaker
   m_TagString: Item
@@ -133,16 +132,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemValue: 3
   Positive: 0
---- !u!114 &-8291564013588949438
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4323578103158139913}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97f1508c6ef542e4294a841760983363, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  item: {fileID: 11400000, guid: b07a9afa6cde8b24db1c2330fe8122f6, type: 2}

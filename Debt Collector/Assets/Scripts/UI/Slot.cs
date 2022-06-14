@@ -8,17 +8,32 @@ public class Slot : MonoBehaviour
 {
     //public Image icon;
     //ItemInfo item;
-    public List<Image> Icons;
+    public List<Image> Images;
     public List<Sprite> Sprites;
-
+    public SpawnObject spawnObject;
+    public List<string> spawnedItemsWithNoDuplicates;
     private void Start()
     {
-        AssignSprites(Shuffle(Sprites), Icons);
+        AssignSprites(Shuffle(Sprites), Images);
+        /*for (int i = 0; i < spawnObject.spawnedItemsWithNoDuplicates.Count; i++)
+            if (spawnObject.spawnedItemsWithNoDuplicates[i] != null)
+            {
+                try
+                {
+                    Debug.Log(spawnObject.spawnedItemsWithNoDuplicates);
+                }
+                catch (NullReferenceException ex)
+                { }
+            }*/
     }
     void AssignSprites(IList<Sprite> sprites, IList<Image> images)
     {
         for (int i = 0; i < images.Count && i < sprites.Count; ++i)
+        {
             images[i].sprite = sprites[i];
+            //Debug.Log(sprites[i].name); //WYPISYWANIE SAMEJ NAZWY PRZYPISANEGO SPRITE 
+        }
+            
     }
 
     private static IList<T> Shuffle<T>(IList<T> list)

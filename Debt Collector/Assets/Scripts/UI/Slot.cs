@@ -21,13 +21,16 @@ public class Slot : MonoBehaviour
     };
     private readonly List<Sprite> newSprites = new();
     private readonly List<string> spawnedItems = new();
+
+    private Dictionary<string, int> itemsWithValue;
     //private readonly List<string> spritesInIcons = new();
     public void Start()
     {
-        GameObject go = GameObject.Find("ItemDescription");
-        GlobalDictionary globalDictionary = go.GetComponent<GlobalDictionary>();
-        Dictionary<string, int> itemWithValue = globalDictionary.getDictionary();
-
+        GameObject go = GameObject.Find("Item");
+        Item globalDictionary = go.GetComponent<Item>();
+        itemsWithValue = globalDictionary.getDictionary();
+        Debug.Log(itemsWithValue.Count);
+        
         foreach (string spawner in spawners)
         {
             GameObject go2 = GameObject.Find(spawner);
@@ -55,7 +58,15 @@ public class Slot : MonoBehaviour
         {
             images[i].sprite = sprites[i];
             parent = images[i].gameObject.transform.parent;
-            parent.GetComponent<Image>().color = Color.red;
+            
+            /*int value = itemsWithValue[sprites[i].name];
+            if (value >= 0)
+                parent.GetComponent<Image>().color = Color.green;
+            else
+                parent.GetComponent<Image>().color = Color.red;
+            */
+
+            //parent.GetComponent<Image>().color = Color.red;
             //images[i].GetComponent<Image>().color = Color.red;
         }
     }

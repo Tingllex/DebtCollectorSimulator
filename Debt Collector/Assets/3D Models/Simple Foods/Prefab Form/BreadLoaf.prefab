@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1254300951509901995}
   - component: {fileID: -3570122649208642398}
   - component: {fileID: -1993906233773016208}
-  - component: {fileID: 5607813976809067849}
+  - component: {fileID: -6840162374645225033}
   m_Layer: 0
   m_Name: BreadLoaf
   m_TagString: Item
@@ -49,8 +49,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1329358217a9921498c160e41f0df6fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ItemValue: 3
-  Positive: 0
+  itemValue: 0
+  isPositive: 0
+  objectName: 
 --- !u!54 &-3570122649208642398
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -80,7 +81,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.3, y: 0.3, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &5607813976809067849
+--- !u!114 &-6840162374645225033
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -89,10 +90,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 4831848365070257267}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97f1508c6ef542e4294a841760983363, type: 3}
+  m_Script: {fileID: 11500000, guid: 1329358217a9921498c160e41f0df6fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 11400000, guid: 7b0e526b2b6bfbe40b27f11183f96571, type: 2}
+  itemValue: 0
+  isPositive: 0
+  objectName: 
 --- !u!1 &4918817141213332294
 GameObject:
   m_ObjectHideFlags: 0

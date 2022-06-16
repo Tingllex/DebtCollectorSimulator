@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: -3130055371092378312}
   - component: {fileID: 2761881523153570042}
   - component: {fileID: 1607441998559464666}
-  - component: {fileID: 2901051434385100502}
+  - component: {fileID: 3506910283786137196}
   m_Layer: 0
   m_Name: AppleGreen
   m_TagString: Item
@@ -132,8 +132,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1329358217a9921498c160e41f0df6fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ItemValue: 4
-  Positive: 0
+  itemValue: 0
+  isPositive: 0
+  objectName: 
 --- !u!65 &2761881523153570042
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -163,7 +164,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &2901051434385100502
+--- !u!114 &3506910283786137196
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -172,10 +173,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 4638762322126651341}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97f1508c6ef542e4294a841760983363, type: 3}
+  m_Script: {fileID: 11500000, guid: 1329358217a9921498c160e41f0df6fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 11400000, guid: b6f1848802cdf9e40bae68456609394f, type: 2}
+  itemValue: 0
+  isPositive: 0
+  objectName: 
 --- !u!1 &8384329179019921406
 GameObject:
   m_ObjectHideFlags: 0

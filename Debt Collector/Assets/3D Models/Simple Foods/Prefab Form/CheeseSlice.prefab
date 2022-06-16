@@ -427,7 +427,6 @@ GameObject:
   - component: {fileID: -3470986637137818627}
   - component: {fileID: -7445493336421240390}
   - component: {fileID: -741744654932538883}
-  - component: {fileID: -5919996063400204884}
   m_Layer: 0
   m_Name: CheeseSlice
   m_TagString: Item
@@ -496,18 +495,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1329358217a9921498c160e41f0df6fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ItemValue: 7
-  Positive: 0
---- !u!114 &-5919996063400204884
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7334098755715255590}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97f1508c6ef542e4294a841760983363, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  item: {fileID: 11400000, guid: 65f1e80287f4bc34a80465c21be80749, type: 2}
+  itemValue: 0
+  isPositive: 0
+  objectName: 

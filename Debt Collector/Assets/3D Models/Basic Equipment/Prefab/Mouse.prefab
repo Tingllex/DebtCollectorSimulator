@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 8357783126241186065}
   - component: {fileID: 8357783126241186066}
   - component: {fileID: 8357783126241186062}
-  - component: {fileID: -8627864519724147645}
   m_Layer: 0
   m_Name: Mouse
   m_TagString: Item
@@ -128,18 +127,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1329358217a9921498c160e41f0df6fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ItemValue: 7
-  Positive: 0
---- !u!114 &-8627864519724147645
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9168667661869067334}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97f1508c6ef542e4294a841760983363, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  item: {fileID: 11400000, guid: 5e7e01d633a1ac347b9f76fe73e5e26f, type: 2}
+  itemValue: 0
+  isPositive: 0
+  objectName: 

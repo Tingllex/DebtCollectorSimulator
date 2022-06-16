@@ -95,7 +95,6 @@ GameObject:
   - component: {fileID: -8966762954315408016}
   - component: {fileID: -382373462292627820}
   - component: {fileID: -1508317548035400040}
-  - component: {fileID: -7193426067361845071}
   m_Layer: 0
   m_Name: Onion
   m_TagString: Item
@@ -161,21 +160,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1329358217a9921498c160e41f0df6fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ItemValue: 2
-  Positive: 0
---- !u!114 &-7193426067361845071
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5316587841953117281}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97f1508c6ef542e4294a841760983363, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  item: {fileID: 11400000, guid: 5d3d6867bff14234288fec6e201c2e26, type: 2}
+  itemValue: 0
+  isPositive: 0
+  objectName: 
 --- !u!1 &9075737651972754514
 GameObject:
   m_ObjectHideFlags: 0

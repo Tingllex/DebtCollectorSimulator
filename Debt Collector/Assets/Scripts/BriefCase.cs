@@ -27,7 +27,7 @@ public class BriefCase : MonoBehaviour
             Item lItem = collision.gameObject.GetComponent<Item>();
             if (lItem != null)
             {
-                CollectedCash += lItem.ItemValue;
+                CollectedCash += lItem.itemValue;
             }
             Destroy(collision.gameObject);
             Debug.Log("CollectedCash " + CollectedCash);

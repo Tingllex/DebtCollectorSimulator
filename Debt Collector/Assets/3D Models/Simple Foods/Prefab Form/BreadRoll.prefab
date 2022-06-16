@@ -178,7 +178,6 @@ GameObject:
   - component: {fileID: 8650065914886276558}
   - component: {fileID: -6192251664634947097}
   - component: {fileID: -5766576418921577455}
-  - component: {fileID: 8589250274465994874}
   m_Layer: 0
   m_Name: BreadRoll
   m_TagString: Item
@@ -244,18 +243,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1329358217a9921498c160e41f0df6fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ItemValue: 2
-  Positive: 0
---- !u!114 &8589250274465994874
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3312883956077679648}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97f1508c6ef542e4294a841760983363, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  item: {fileID: 11400000, guid: 427ef79268f16c34ea021a4c592af340, type: 2}
+  itemValue: 0
+  isPositive: 0
+  objectName: 

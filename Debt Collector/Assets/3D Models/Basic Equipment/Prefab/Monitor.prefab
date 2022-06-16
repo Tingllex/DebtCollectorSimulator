@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 3053864137811111399}
   - component: {fileID: 3053864137811111392}
   - component: {fileID: 3053864137811111420}
-  - component: {fileID: 3053864137811111421}
   m_Layer: 0
   m_Name: Monitor
   m_TagString: Item
@@ -129,18 +128,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1329358217a9921498c160e41f0df6fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ItemValue: 7
-  Positive: 0
---- !u!114 &3053864137811111421
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2783480280030384308}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97f1508c6ef542e4294a841760983363, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  item: {fileID: 11400000, guid: abfaa3e789ce6b247b47b3af98d16491, type: 2}
+  itemValue: 0
+  isPositive: 0
+  objectName: 

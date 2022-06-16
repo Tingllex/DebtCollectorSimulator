@@ -345,6 +345,7 @@ GameObject:
   - component: {fileID: 193583055752059508}
   - component: {fileID: -5240910793390852809}
   - component: {fileID: -4208570530834559565}
+  - component: {fileID: 3309381440318122311}
   m_Layer: 0
   m_Name: WholeBirdRaw
   m_TagString: Item
@@ -399,8 +400,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1329358217a9921498c160e41f0df6fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ItemValue: 0
-  Positive: 0
+  itemValue: 0
+  isPositive: 0
+  objectName: 
 --- !u!54 &-5240910793390852809
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -430,6 +432,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.7, y: 0.6, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3309381440318122311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4446042087989776518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1329358217a9921498c160e41f0df6fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemValue: 0
+  isPositive: 0
+  objectName: 
 --- !u!1 &5140198968123215076
 GameObject:
   m_ObjectHideFlags: 0

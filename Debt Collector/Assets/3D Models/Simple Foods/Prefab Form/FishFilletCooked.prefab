@@ -92,7 +92,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2737412387135586305}
-  - component: {fileID: 6429997389666610856}
   - component: {fileID: 1127236401490296081}
   - component: {fileID: -858672401486704037}
   - component: {fileID: -526812016935046824}
@@ -120,19 +119,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6429997389666610856
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3366140265147980475}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97f1508c6ef542e4294a841760983363, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  item: {fileID: 11400000, guid: d6c70ecb52a097b4c983cb8be26a2f63, type: 2}
 --- !u!54 &1127236401490296081
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -174,8 +160,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1329358217a9921498c160e41f0df6fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ItemValue: 2
-  Positive: 0
+  itemValue: 0
+  isPositive: 0
+  objectName: 
+  backgroundColor: 
 --- !u!1 &6075578822743918297
 GameObject:
   m_ObjectHideFlags: 0

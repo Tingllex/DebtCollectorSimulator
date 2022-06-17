@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 5088438962396733318}
   - component: {fileID: 5088438962395963302}
   - component: {fileID: 5088438962394963302}
-  - component: {fileID: -94069509053351304}
   - component: {fileID: 4411245535342472190}
   - component: {fileID: -6076517157887262381}
   - component: {fileID: -4971583113589232505}
@@ -89,19 +88,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &-94069509053351304
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5088438962396955558}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97f1508c6ef542e4294a841760983363, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  item: {fileID: 11400000, guid: a32606dd34f023b4096ff616cb1afac6, type: 2}
 --- !u!54 &4411245535342472190
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -143,5 +129,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1329358217a9921498c160e41f0df6fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ItemValue: 7
-  Positive: 0
+  itemValue: 0
+  isPositive: 0
+  objectName: 
+  backgroundColor: 

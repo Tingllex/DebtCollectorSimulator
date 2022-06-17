@@ -22,7 +22,7 @@ public class Slot : MonoBehaviour
     private readonly List<Sprite> newSprites = new();
     private readonly List<string> spawnedItems = new();
 
-    private Dictionary<string, int> itemsWithValue = new();
+    private Dictionary<string, int> itemsWithValue;
     public void Start()
     {
         foreach (string spawner in spawners)
@@ -43,26 +43,25 @@ public class Slot : MonoBehaviour
 
         /*for (int i = 0; i < newSprites.Count; i++)
             Debug.Log(newSprites[i]);*/
-
         AssignSprites(Shuffle(newSprites), images);
     }
 
     void AssignSprites(IList<Sprite> sprites, IList<Image> images)
     {
+        GameObject go = GameObject.Find("ItemDescription");
+        GlobalDictionary globalDictionary = go.GetComponent<GlobalDictionary>();
+        itemsWithValue = globalDictionary.getDictionary();
+
         for (int i = 0; i < images.Count && i < sprites.Count; ++i)
         {
             images[i].sprite = sprites[i];
             parent = images[i].gameObject.transform.parent;
-            
-            /*int value = itemsWithValue[sprites[i].name];
+
+            int value = itemsWithValue[sprites[i].name];
             if (value >= 0)
                 parent.GetComponent<Image>().color = Color.green;
             else
                 parent.GetComponent<Image>().color = Color.red;
-            */
-
-            //parent.GetComponent<Image>().color = Color.red;
-            //images[i].GetComponent<Image>().color = Color.red;
         }
     }
 
@@ -84,10 +83,4 @@ public class Slot : MonoBehaviour
         }
         return result;
     }
-    /*public void AddItem(ItemInfo newItem)
-    {
-        item = newItem;
-        icon.sprite = item.icon;
-        icon.enabled = true;
-    }*/
 }

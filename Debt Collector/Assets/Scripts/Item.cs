@@ -9,13 +9,13 @@ public class Item : MonoBehaviour
     public string objectName;
     public string backgroundColor;
     private Dictionary<string, int> itemWithValue;
-    public void Start()
+    public void Awake()
     {
         itemValue = Random.Range(-10, 10);
         GameObject go = GameObject.Find("ItemDescription");
         GlobalDictionary globalDictionary = go.GetComponent<GlobalDictionary>();
         itemWithValue = globalDictionary.getDictionary();
-        objectName = gameObject.name;
+        objectName = gameObject.name.Remove(gameObject.name.Length-7);
         if (itemWithValue.ContainsKey(objectName))
             itemValue = itemWithValue[objectName];
 
@@ -32,10 +32,5 @@ public class Item : MonoBehaviour
 
         if (!itemWithValue.ContainsKey(objectName))
             itemWithValue.Add(objectName, itemValue);
-    }
-
-    public Dictionary<string, int> getDictionary()
-    {
-        return itemWithValue;
     }
 }

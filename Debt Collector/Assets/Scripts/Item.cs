@@ -11,36 +11,27 @@ public class Item : MonoBehaviour
     private Dictionary<string, int> itemWithValue;
     public void Start()
     {
-        if (gameObject.name != "Item")
+        itemValue = Random.Range(-10, 10);
+        GameObject go = GameObject.Find("ItemDescription");
+        GlobalDictionary globalDictionary = go.GetComponent<GlobalDictionary>();
+        itemWithValue = globalDictionary.getDictionary();
+        objectName = gameObject.name;
+        if (itemWithValue.ContainsKey(objectName))
+            itemValue = itemWithValue[objectName];
+
+        if (itemValue >= 0)
         {
-            itemValue = Random.Range(-10, 10);
-            GameObject go = GameObject.Find("ItemDescription");
-            GlobalDictionary globalDictionary = go.GetComponent<GlobalDictionary>();
-            itemWithValue = globalDictionary.getDictionary();
-            objectName = gameObject.name;
-            if (itemWithValue.ContainsKey(objectName))
-                itemValue = itemWithValue[objectName];
-
-            if (itemValue >= 0)
-            {
-                isPositive = true;
-                backgroundColor = "green";
-            }
-            else
-            {
-                isPositive = false;
-                backgroundColor = "red";
-            }
-
-            if (!itemWithValue.ContainsKey(objectName))
-                itemWithValue.Add(objectName, itemValue);
+            isPositive = true;
+            backgroundColor = "green";
         }
         else
         {
-            GameObject go = GameObject.Find("ItemDescription");
-            GlobalDictionary globalDictionary = go.GetComponent<GlobalDictionary>();
-            itemWithValue = globalDictionary.getDictionary();
+            isPositive = false;
+            backgroundColor = "red";
         }
+
+        if (!itemWithValue.ContainsKey(objectName))
+            itemWithValue.Add(objectName, itemValue);
     }
 
     public Dictionary<string, int> getDictionary()

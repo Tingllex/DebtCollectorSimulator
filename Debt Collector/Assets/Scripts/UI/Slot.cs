@@ -22,15 +22,9 @@ public class Slot : MonoBehaviour
     private readonly List<Sprite> newSprites = new();
     private readonly List<string> spawnedItems = new();
 
-    private Dictionary<string, int> itemsWithValue;
-    //private readonly List<string> spritesInIcons = new();
+    private Dictionary<string, int> itemsWithValue = new();
     public void Start()
     {
-        GameObject go = GameObject.Find("Item");
-        Item globalDictionary = go.GetComponent<Item>();
-        itemsWithValue = globalDictionary.getDictionary();
-        Debug.Log(itemsWithValue.Count);
-        
         foreach (string spawner in spawners)
         {
             GameObject go2 = GameObject.Find(spawner);
@@ -49,6 +43,7 @@ public class Slot : MonoBehaviour
 
         /*for (int i = 0; i < newSprites.Count; i++)
             Debug.Log(newSprites[i]);*/
+
         AssignSprites(Shuffle(newSprites), images);
     }
 

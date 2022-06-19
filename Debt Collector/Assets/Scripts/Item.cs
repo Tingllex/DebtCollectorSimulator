@@ -5,6 +5,7 @@ using UnityEngine;
 public class Item : MonoBehaviour
 {
     public int itemValue;
+    public bool positiveOnly;
     public bool isPositive;
     public string objectName;
     public string backgroundColor;
@@ -12,6 +13,10 @@ public class Item : MonoBehaviour
     public void Awake()
     {
         itemValue = Random.Range(-10, 10);
+        if (positiveOnly)
+        {
+            itemValue = Random.Range(0, 10);
+        }
         GameObject go = GameObject.Find("ItemDescription");
         GlobalDictionary globalDictionary = go.GetComponent<GlobalDictionary>();
         itemWithValue = globalDictionary.getDictionary();

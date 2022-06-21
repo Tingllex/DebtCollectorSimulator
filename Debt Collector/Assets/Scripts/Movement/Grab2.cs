@@ -2,31 +2,31 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Grab : MonoBehaviour
+public class Grab2 : MonoBehaviour
 {
     private bool hold;
     public Animator animator;
 
     private void FixedUpdate()
     {
-        if (Input.GetKey(KeyCode.Mouse1))
+        if (Input.GetKey(KeyCode.Mouse0))
         {
             if (Input.GetKey(KeyCode.LeftControl))
             {
-                animator.SetBool("isRightHandUp", true);
-                animator.SetBool("isMaxRightHandUp", true);
+                animator.SetBool("isLeftHandUp", true);
+                animator.SetBool("isMaxLeftHandUp", true);
             }
             else
             {
-                animator.SetBool("isMaxRightHandUp", false);
-                animator.SetBool("isRightHandUp", true);
+                animator.SetBool("isMaxLeftHandUp", false);
+                animator.SetBool("isLeftHandUp", true);
             }
             hold = true;
         }
         else
         {
-            animator.SetBool("isRightHandUp", false);
-            animator.SetBool("isMaxRightHandUp", false);
+            animator.SetBool("isLeftHandUp", false);
+            animator.SetBool("isMaxLeftHandUp", false);
             hold = false;
             Destroy(GetComponent<FixedJoint>());
         }

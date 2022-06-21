@@ -9,7 +9,7 @@ public class WinScore : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (BriefCase.CollectedCash >= 10)
+        if (BriefCase.CollectedCash >= 50)
         {
             Time.timeScale = 0f;
             panel.SetActive(true);

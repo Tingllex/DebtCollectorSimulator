@@ -129,4 +129,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1329358217a9921498c160e41f0df6fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ItemValue: 5
+  itemValue: 0
+  positiveOnly: 1
+  isPositive: 0
+  objectName: 
+  backgroundColor: 

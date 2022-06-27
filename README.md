@@ -1,4 +1,4 @@
-##Debt Collector Game
+#Debt Collector Game
 Praca poświęcona jest stworzeniu gry komputerowej z wykorzystaniem silnika
 Unity oraz programu do modelowania 3D Blender. Zadaniem gracza jest ze-
 branie wymaganej ilości długu w wyznaczonym czasie. Rozgrywka ta oferuje
